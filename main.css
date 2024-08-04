@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter' ;
+}
+
+
+body {
+  background-color:rgb(239,239,239);
+}
+
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+.container .wrapper {
+  width: 690px;
+  padding: 20px;
+}
+
+.container .wrapper > h1 {
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.container .wrapper form {
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+}
+
+.container .wrapper form #input-tarefa {
+ width: 250px;
+}
+
+.container .wrapper form #input-tarefa, 
+button {
+  padding: 10px;
+}
+
+form #input-tarefa::placeholder {
+  font-size: 17px;
+}
+
+.container .wrapper form button {
+  font-weight: bold;
+  font-size: 15px;
+  cursor: pointer;
+}
+
+
+.container .wrapper .lista {
+  display: flex;
+  justify-content: center;
+}
+
+.container .wrapper ul{
+  width: 250px;
+  margin-top: 40px;
+}
+ 
+.container .wrapper ul li {
+  cursor: pointer;
+  padding: 5px;
+}
+
+
+.tarefaCompleta {
+  text-decoration: line-through;
+  
+}
